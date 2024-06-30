@@ -1,12 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projects gallery with HTML and CSS designed by Nureddin Haji.">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Projects gallery with HTML and CSS designed by Nureddin Haji."
+        />
+        <title>My Projects Gallery</title>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <main class="cards">
+                <article class="card card--large">
+                    <header class="card__header">
+                        <img
+                            src="images/myAvatar.png"
+                            alt="My Avatar"
+                            class="card__avatar"
+                        />
+                        <h1 class="card__h1">Nureddin Haji</h1>
+                    </header>
+                    <footer class="card__footer">
+                        <a
+                            href="#"
+                            aria-label="Follow me on LinkedIn"
+                            class="card__social card__social--linkedin"
+                            ><svg
+                                class="card__svg"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewbox="0 0 24 24"
+                            >
+                                <path
+                                    d="M5 3.5C5 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1 5 2.1 5 3.5zM5 8H0v16h5V8zm8 0H8v16h5v-8.4c0-4.7 6-5 6 0V24h5V13.9c0-8-9-7.6-11-3.7V8z"
+                                /></svg
+                        ></a>
+                        <a
+                            href="#"
+                            aria-label="Follow me on GitHub"
+                            class="card__social card__social--github"
+                            ><svg
+                                viewBox="0 0 1920 1920"
+                                class="card__svg"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M1873 674c0-122-35-230-106-322 16-57 32-172-21-313-5-15-18-27-33-32-19-7-122-31-329 111a1063 1063 0 0 0-529 0C649-24 546 0 526 7c-15 5-27 17-33 32a510 510 0 0 0-20 313 513 513 0 0 0-107 322c0 423 222 557 432 606-46 51-95 125-105 219-72 26-258 79-325-44-3-5-74-137-215-148-25 2-85 5-101 55-19 56 39 97 67 117 1 0 56 32 94 132 1 5 24 115 135 182 88 52 203 63 341 32v94h107l1-29c1-162 2-165-31-182-13-6-27-8-41-4-136 41-247 40-320-2-70-42-86-109-89-120s-8-21-12-30c127 145 372 77 463 33 19-8 31-27 31-48 0-150 149-244 150-245a54 54 0 0 0-22-99c-224-27-452-110-452-519 0-106 33-199 100-275 12-15 16-36 9-55-10-25-36-112 0-234 36 4 111 24 231 110 13 10 30 12 46 8a957 957 0 0 1 519 0c16 4 33 2 47-8a536 536 0 0 1 231-111c36 122 9 210 0 235-8 19-4 40 9 55 66 76 100 169 100 275 0 409-229 491-454 518a54 54 0 0 0-29 93l25 20c51 40 137 105 137 260l-2 354 108 1 1-355c0-142-56-230-110-286 210-49 431-183 431-605"
+                                    fill-rule="evenodd"
+                                /></svg
+                        ></a>
+                        <a
+                            href="#"
+                            aria-label="Follow me on Facebook"
+                            class="card__social card__social--facebook"
+                            ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="card__svg"
+                                viewbox="0 0 24 24"
+                            >
+                                <path
+                                    d="M9 8H6v4h3v12h5V12h3.6l.4-4h-4V6.3c0-1 .2-1.3 1.1-1.3H18V0h-3.8C10.6 0 9 1.6 9 4.6V8z"
+                                /></svg
+                        ></a>
+                        <a
+                            href="#"
+                            aria-label="Follow me on Twitter"
+                            class="card__social card__social--twitter"
+                            ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="card__svg"
+                                viewbox="0 0 16 16"
+                            >
+                                <path
+                                    d="M9.52 6.77 15.48 0h-1.41L8.9 5.88 4.76 0H0l6.25 8.9L0 16h1.41l5.46-6.22L11.24 16H16L9.52 6.77ZM7.6 8.97l-.63-.89-5.04-7.04h2.17l4.06 5.68.64.89L14.07 15H11.9L7.59 8.97Z"
+                                /></svg
+                        ></a>
+                        <a
+                            href="#"
+                            aria-label="Follow me on Telegram"
+                            class="card__social card__social--telegram"
+                            ><svg
+                                viewbox="0 0 24 24"
+                                class="card__svg"
+                                xmlns="http://www.w3.org/2000/svg"
+                                xml:space="preserve"
+                                style="
+                                    fill-rule: evenodd;
+                                    clip-rule: evenodd;
+                                    stroke-linejoin: round;
+                                    stroke-miterlimit: 1.41421;
+                                "
+                            >
+                                <path
+                                    d="M18.4 22.8c.3.2.7.3 1 .1.5-.1.7-.4.8-.8L24 3.9c0-.2 0-.5-.3-.7A.8.8 0 0 0 23 3L.5 11.4c-.3.1-.5.4-.5.8s.2.7.6.8L6 14.7l2.2 6.6c0 .3.3.5.6.5.3.1.6 0 .8-.2l3-2.9 5.7 4ZM7.4 14 9 19.6l.3-3.5L19.6 7v-.3c0-.1-.2-.2-.3 0L7.3 14Z"
+                                /></svg
+                        ></a>
+                        <a
+                            href="#"
+                            aria-label="Follow me on Codepen"
+                            class="card__social card__social--codepen"
+                            ><svg
+                                viewbox="0 0 24 24"
+                                class="card__svg"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    clip-rule="evenodd"
+                                    d="M11.4.2c.4-.3.8-.3 1.2 0l10.9 7.2c.3.2.5.6.5 1v7.3c0 .3-.2.7-.5.9l-10.9 7.2c-.4.3-.8.3-1.2 0L.5 16.6c-.3-.2-.5-.6-.5-1V8.4c0-.3.2-.7.5-.9zM2.3 10.5v3L4.6 12zm4.3 2.8-3.4 2.3 7.7 5.1v-4.5zm6.5 2.9v4.5l7.7-5-3.4-2.4zm6.3-4.2 2.3 1.5v-3zm1.4-3.7-3.4 2.3-4.3-2.9V3.3zm-10-5v4.4l-4.2 3-3.4-2.4zM12 9.7 8.6 12l3.4 2.2 3.4-2.2z"
+                                    fill-rule="evenodd"
+                                /></svg
+                        ></a>
+                    </footer>
+                </article>
+                <article class="card card--small">
+                    <h2 class="card__h2">Project Name</h2>
+                    <span class="card__description">Project Label</span>
+                    <h3 class="card__h3">Tech Stack</h3>
+                    <ul class="card__list">
+                        <li class="card__list-item">HTML</li>
+                        <li class="card__list-item">CSS</li>
+                        <li class="card__list-item">Javascript</li>
+                    </ul>
+                </article>
+                <article class="card card--small">
+                    <h2 class="card__h2">Project Name</h2>
+                    <span class="card__description">Project Label</span>
+                    <h3 class="card__h3">Tech Stack</h3>
+                    <ul class="card__list">
+                        <li class="card__list-item">HTML</li>
+                        <li class="card__list-item">CSS</li>
+                        <li class="card__list-item">Javascript</li>
+                    </ul>
+                </article>
+                <article class="card card--small">
+                    <h2 class="card__h2">Project Name</h2>
+                    <span class="card__description">Project Label</span>
+                    <h3 class="card__h3">Tech Stack</h3>
+                    <ul class="card__list">
+                        <li class="card__list-item">HTML</li>
+                        <li class="card__list-item">CSS</li>
+                        <li class="card__list-item">Javascript</li>
+                    </ul>
+                </article>
+                <article class="card card--small">
+                    <h2 class="card__h2">Project Name</h2>
+                    <span class="card__description">Project Label</span>
+                    <h3 class="card__h3">Tech Stack</h3>
+                    <ul class="card__list">
+                        <li class="card__list-item">HTML</li>
+                        <li class="card__list-item">CSS</li>
+                        <li class="card__list-item">Javascript</li>
+                    </ul>
+                </article>
+                <article class="card card--small">
+                    <h2 class="card__h2">Project Name</h2>
+                    <span class="card__description">Project Label</span>
+                    <h3 class="card__h3">Tech Stack</h3>
+                    <ul class="card__list">
+                        <li class="card__list-item">HTML</li>
+                        <li class="card__list-item">CSS</li>
+                        <li class="card__list-item">Javascript</li>
+                    </ul>
+                </article>
+                <article class="card card--small">
+                    <h2 class="card__h2">Project Name</h2>
+                    <span class="card__description">Project Label</span>
+                    <h3 class="card__h3">Tech Stack</h3>
+                    <ul class="card__list">
+                        <li class="card__list-item">HTML</li>
+                        <li class="card__list-item">CSS</li>
+                        <li class="card__list-item">Javascript</li>
+                    </ul>
+                </article>
+            </main>
+        </div>
+    </body>
 </html>

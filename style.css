@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+ul,
+ol {
+    list-style: none;
+}
+button {
+    cursor: pointer;
+    background-color: transparent;
+}
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --main-color: #0b265b;
+    --main-color-low-opacity: rgba(11, 38, 91, 0.02);
+    --submain-color: #e8ebf2;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        --s: 20px; /* control the size*/
+        --c1: var(--main-color-low-opacity);
+        --c2: var(--submain-color);
+        
+        --c:#0000 46.46%,var(--c1) 0 53.53%,#0000 0;
+        --d:calc(10*var(--s)) calc(10*var(--s));
+        --g:/var(--d) conic-gradient(at 40% 40%,#0000 75%,var(--c1) 0);
+        background:
+          conic-gradient(at 40% 40%,#0000 75%,var(--c2) 0) 
+           calc(9*var(--s)) calc(9*var(--s))/
+           calc(5*var(--s)) calc(5*var(--s)),
+          calc(8*var(--s)) calc(8*var(--s)) var(--g),
+          calc(3*var(--s)) calc(3*var(--s)) var(--g),
+          linear-gradient( 45deg,var(--c)) 0 0/var(--d),
+          linear-gradient(-45deg,var(--c)) 0 0/var(--d) var(--c2);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+.card {
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.card--large {
+    grid-row: span 2;
+    display: flex;
+    flex-direction: column;
+}
+.card--small {
+    padding: 2rem;
+    background-color: white;
+}
+
+.card__header {
+    flex: 1;
+    padding: 2rem;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.card__avatar {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+}
+.card__h1 {
+    font-size: 2.55rem;
+    font-weight: bold;
+    color: var(--submain-color);
+}
+
+
+.card__footer {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+    gap: 0.3rem;
+    background-color: white;
+}
+.card__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: var(--main-color);
+}
+.card__svg {
+    width: 3rem;
+    height: 3rem;
+    fill: var(--submain-color);
+}
