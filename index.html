@@ -9,13 +9,20 @@
         />
         <title>My Projects Gallery</title>
 
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+            rel="stylesheet"
+        />
+
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
         <div class="container">
             <main class="cards">
                 <article class="card card--large">
-                    <header class="card__header">
+                    <header class="card__header--large">
                         <img
                             src="images/myAvatar.png"
                             alt="My Avatar"
@@ -23,13 +30,13 @@
                         />
                         <h1 class="card__h1">Nureddin Haji</h1>
                     </header>
-                    <footer class="card__footer">
+                    <footer class="card__footer--large">
                         <a
                             href="#"
                             aria-label="Follow me on LinkedIn"
                             class="card__social card__social--linkedin"
                             ><svg
-                                class="card__svg"
+                                class="card__svg--large"
                                 xmlns="http://www.w3.org/2000/svg"
                                 viewbox="0 0 24 24"
                             >
@@ -43,7 +50,7 @@
                             class="card__social card__social--github"
                             ><svg
                                 viewBox="0 0 1920 1920"
-                                class="card__svg"
+                                class="card__svg--large"
                                 xmlns="http://www.w3.org/2000/svg"
                             >
                                 <path
@@ -57,7 +64,7 @@
                             class="card__social card__social--facebook"
                             ><svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="card__svg"
+                                class="card__svg--large"
                                 viewbox="0 0 24 24"
                             >
                                 <path
@@ -70,7 +77,7 @@
                             class="card__social card__social--twitter"
                             ><svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                class="card__svg"
+                                class="card__svg--large"
                                 viewbox="0 0 16 16"
                             >
                                 <path
@@ -83,7 +90,7 @@
                             class="card__social card__social--telegram"
                             ><svg
                                 viewbox="0 0 24 24"
-                                class="card__svg"
+                                class="card__svg--large"
                                 xmlns="http://www.w3.org/2000/svg"
                                 xml:space="preserve"
                                 style="
@@ -103,7 +110,7 @@
                             class="card__social card__social--codepen"
                             ><svg
                                 viewbox="0 0 24 24"
-                                class="card__svg"
+                                class="card__svg--large"
                                 xmlns="http://www.w3.org/2000/svg"
                             >
                                 <path
@@ -115,64 +122,148 @@
                     </footer>
                 </article>
                 <article class="card card--small">
-                    <h2 class="card__h2">Project Name</h2>
-                    <span class="card__description">Project Label</span>
-                    <h3 class="card__h3">Tech Stack</h3>
-                    <ul class="card__list">
-                        <li class="card__list-item">HTML</li>
-                        <li class="card__list-item">CSS</li>
-                        <li class="card__list-item">Javascript</li>
-                    </ul>
+                    <header class="card__header--smal">
+                        <h2 class="card__h2">Project Name</h2>
+                        <span class="card__description">Project Label</span>
+                    </header>
+                    <footer class="card__footer--small">
+                        <h3 class="card__h3">Tech Stack</h3>
+                        <ul class="card__list">
+                            <li class="card__list-item">HTML</li>
+                            <li class="card__list-item">CSS</li>
+                            <li class="card__list-item">Javascript</li>
+                        </ul>
+                        <a href="#" class="card__link"
+                            ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewbox="0 0 24 24"
+                                class="card__svg--small"
+                            >
+                                <path
+                                    d="M21 13v10H0V4h12v2H2v15h17v-8h2zm3-12H13l4 4-7 7 3 3 7-7 4 4V1z"
+                                /></svg
+                        ></a>
+                    </footer>
                 </article>
                 <article class="card card--small">
-                    <h2 class="card__h2">Project Name</h2>
-                    <span class="card__description">Project Label</span>
-                    <h3 class="card__h3">Tech Stack</h3>
-                    <ul class="card__list">
-                        <li class="card__list-item">HTML</li>
-                        <li class="card__list-item">CSS</li>
-                        <li class="card__list-item">Javascript</li>
-                    </ul>
+                    <header class="card__header--smal">
+                        <h2 class="card__h2">Project Name</h2>
+                        <span class="card__description">Project Label</span>
+                    </header>
+                    <footer class="card__footer--small">
+                        <h3 class="card__h3">Tech Stack</h3>
+                        <ul class="card__list">
+                            <li class="card__list-item">HTML</li>
+                            <li class="card__list-item">CSS</li>
+                            <li class="card__list-item">Javascript</li>
+                        </ul>
+                        <a href="#" class="card__link"
+                            ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewbox="0 0 24 24"
+                                class="card__svg--small"
+                            >
+                                <path
+                                    d="M21 13v10H0V4h12v2H2v15h17v-8h2zm3-12H13l4 4-7 7 3 3 7-7 4 4V1z"
+                                /></svg
+                        ></a>
+                    </footer>
                 </article>
                 <article class="card card--small">
-                    <h2 class="card__h2">Project Name</h2>
-                    <span class="card__description">Project Label</span>
-                    <h3 class="card__h3">Tech Stack</h3>
-                    <ul class="card__list">
-                        <li class="card__list-item">HTML</li>
-                        <li class="card__list-item">CSS</li>
-                        <li class="card__list-item">Javascript</li>
-                    </ul>
+                    <header class="card__header--smal">
+                        <h2 class="card__h2">Project Name</h2>
+                        <span class="card__description">Project Label</span>
+                    </header>
+                    <footer class="card__footer--small">
+                        <h3 class="card__h3">Tech Stack</h3>
+                        <ul class="card__list">
+                            <li class="card__list-item">HTML</li>
+                            <li class="card__list-item">CSS</li>
+                            <li class="card__list-item">Javascript</li>
+                        </ul>
+                        <a href="#" class="card__link"
+                            ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewbox="0 0 24 24"
+                                class="card__svg--small"
+                            >
+                                <path
+                                    d="M21 13v10H0V4h12v2H2v15h17v-8h2zm3-12H13l4 4-7 7 3 3 7-7 4 4V1z"
+                                /></svg
+                        ></a>
+                    </footer>
                 </article>
                 <article class="card card--small">
-                    <h2 class="card__h2">Project Name</h2>
-                    <span class="card__description">Project Label</span>
-                    <h3 class="card__h3">Tech Stack</h3>
-                    <ul class="card__list">
-                        <li class="card__list-item">HTML</li>
-                        <li class="card__list-item">CSS</li>
-                        <li class="card__list-item">Javascript</li>
-                    </ul>
+                    <header class="card__header--smal">
+                        <h2 class="card__h2">Project Name</h2>
+                        <span class="card__description">Project Label</span>
+                    </header>
+                    <footer class="card__footer--small">
+                        <h3 class="card__h3">Tech Stack</h3>
+                        <ul class="card__list">
+                            <li class="card__list-item">HTML</li>
+                            <li class="card__list-item">CSS</li>
+                            <li class="card__list-item">Javascript</li>
+                        </ul>
+                        <a href="#" class="card__link"
+                            ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewbox="0 0 24 24"
+                                class="card__svg--small"
+                            >
+                                <path
+                                    d="M21 13v10H0V4h12v2H2v15h17v-8h2zm3-12H13l4 4-7 7 3 3 7-7 4 4V1z"
+                                /></svg
+                        ></a>
+                    </footer>
                 </article>
                 <article class="card card--small">
-                    <h2 class="card__h2">Project Name</h2>
-                    <span class="card__description">Project Label</span>
-                    <h3 class="card__h3">Tech Stack</h3>
-                    <ul class="card__list">
-                        <li class="card__list-item">HTML</li>
-                        <li class="card__list-item">CSS</li>
-                        <li class="card__list-item">Javascript</li>
-                    </ul>
+                    <header class="card__header--smal">
+                        <h2 class="card__h2">Project Name</h2>
+                        <span class="card__description">Project Label</span>
+                    </header>
+                    <footer class="card__footer--small">
+                        <h3 class="card__h3">Tech Stack</h3>
+                        <ul class="card__list">
+                            <li class="card__list-item">HTML</li>
+                            <li class="card__list-item">CSS</li>
+                            <li class="card__list-item">Javascript</li>
+                        </ul>
+                        <a href="#" class="card__link"
+                            ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewbox="0 0 24 24"
+                                class="card__svg--small"
+                            >
+                                <path
+                                    d="M21 13v10H0V4h12v2H2v15h17v-8h2zm3-12H13l4 4-7 7 3 3 7-7 4 4V1z"
+                                /></svg
+                        ></a>
+                    </footer>
                 </article>
                 <article class="card card--small">
-                    <h2 class="card__h2">Project Name</h2>
-                    <span class="card__description">Project Label</span>
-                    <h3 class="card__h3">Tech Stack</h3>
-                    <ul class="card__list">
-                        <li class="card__list-item">HTML</li>
-                        <li class="card__list-item">CSS</li>
-                        <li class="card__list-item">Javascript</li>
-                    </ul>
+                    <header class="card__header--smal">
+                        <h2 class="card__h2">Project Name</h2>
+                        <span class="card__description">Project Label</span>
+                    </header>
+                    <footer class="card__footer--small">
+                        <h3 class="card__h3">Tech Stack</h3>
+                        <ul class="card__list">
+                            <li class="card__list-item">HTML</li>
+                            <li class="card__list-item">CSS</li>
+                            <li class="card__list-item">Javascript</li>
+                        </ul>
+                        <a href="#" class="card__link"
+                            ><svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewbox="0 0 24 24"
+                                class="card__svg--small"
+                            >
+                                <path
+                                    d="M21 13v10H0V4h12v2H2v15h17v-8h2zm3-12H13l4 4-7 7 3 3 7-7 4 4V1z"
+                                /></svg
+                        ></a>
+                    </footer>
                 </article>
             </main>
         </div>
