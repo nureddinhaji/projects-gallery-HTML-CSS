@@ -33,5 +33,5 @@ This project is licensed under the MIT License.
 
 For more information or inquiries, you can reach me through my social media profiles:
 
-LinkedIn: [Nureddin Haji](https://www.linkedin.com/in/nureddinhaji)
-Twitter: [@NureddinHaji](https://twitter.com/NureddinHaji)
+* LinkedIn: [Nureddin Haji](https://www.linkedin.com/in/nureddinhaji)
+* Twitter: [@NureddinHaji](https://twitter.com/NureddinHaji)
