@@ -4,7 +4,7 @@ Welcome to the Projects Gallery! This project showcases various personal project
 
 ## Live Demo
 
-You can view the live demo of the project [here](https://nureddinhaji.github.io/projects-gallery-almdrasa/).
+You can view the live demo of the project [here](https://nureddinhaji.github.io/projects-gallery-HTML-CSS/).
 
 ## Features
 
